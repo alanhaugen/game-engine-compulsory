@@ -11,6 +11,27 @@
 #include "ObjMesh.h"
 #include "Player.h"
 #include "Trophy.h"
+#include "unordered_map"
+
+//Compulsory for game engine
+int numberOfEnemies = 0;
+
+
+struct Component{
+    virtual ~Component();
+};
+
+struct Entity{
+    int mId;
+};
+
+
+class System{
+    virtual void Update(std::unordered_map<std::string, std::unordered_map<int, Component>>) = 0;
+};
+
+
+
 
 /*** Renderer class ***/
 Renderer::Renderer(QVulkanWindow *w, bool msaa)
