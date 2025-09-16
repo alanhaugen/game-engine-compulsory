@@ -24,6 +24,17 @@ qt_add_executable(QtVulkanApp
     ObjMesh.h ObjMesh.cpp
     player.h player.cpp
     trophy.h trophy.cpp
+    entity.h entity.cpp
+    system.h system.cpp
+    componentmanager.h componentmanager.cpp
+    componentpool.h componentpool.cpp
+    icomponentpool.h icomponentpool.cpp
+    entitymanager.h entitymanager.cpp
+    systemmanager.h systemmanager.cpp
+    Components.cpp
+    movementsystem.h movementsystem.cpp
+    damagesystem.h damagesystem.cpp
+    healthsystem.h healthsystem.cpp
 )
 # Define the shader files
 set(SHADER_FILES

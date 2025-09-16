@@ -16,7 +16,7 @@
 //Compulsory for game engine
 int numberOfEnemies = 0;
 
-
+/*
 struct Component{
     virtual ~Component();
 };
@@ -29,7 +29,7 @@ struct Entity{
 class System{
     virtual void Update(std::unordered_map<std::string, std::unordered_map<int, Component>>) = 0;
 };
-
+*/
 
 
 
